@@ -1,0 +1,211 @@
+.type1 {
+  font-family: "Anton", sans-serif;
+}
+.type2 {
+  font-family: "Raleway", sans-serif;
+}
+/* about_news_visual----------------------------------------------------------------- */
+.about_news_visual {
+  position: relative;
+  height: 100%;
+  background: black;
+}
+@media screen and (min-width: 800px) {
+  .about_news_visual {
+    min-height: 700px;
+  }
+} /* lg */
+@media screen and (max-width: 800px) {
+  .about_news_visual {
+    min-height: 500px;
+  }
+} /* sm */
+
+.about_news_visual .img_container {
+  position: absolute;
+  width: 80%;
+  height: 70%;
+  max-width: 450px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.about_news_visual .img_container li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: auto;
+  background-size: cover;
+}
+.about_news_visual .img_container li img {
+  position: absolute;
+  width:100%;
+  /* height script*/
+  object-fit: cover;
+  object-position: center center;
+}
+
+.title_container {
+  position: absolute;
+  width: 90%;
+  height: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border:1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.1);
+}
+.title_container li {
+  position: absolute;
+  transform: translate(-50%,-50%);
+}
+.title_container li h3 {
+
+  text-align: center;
+  line-height: 110%;
+  color:rgba(255,255,255,0.1);
+  font-weight: lighter;
+  -webkit-text-stroke: 1px white ;
+  -webkit-text-fill-color:rgba(255,255,255,0);
+}
+@media screen and (min-width: 800px) {
+  .title_container li h3 {font-size: 90px; }
+}/* lg */
+@media screen and (max-width: 800px) {
+  .title_container li h3 {font-size:11vw; }
+}
+/* sm */
+
+.digits_text_container{
+  position: absolute;
+  width:90%;
+  overflow: hidden;
+}
+@media screen and (min-width: 1100px) {
+  .digits_text_container{
+    left:7%;
+    bottom: 15%;
+    max-width: 250px;
+    height: 100px;
+  }
+}/* lg */
+@media screen and (max-width: 1100px) {
+  .digits_text_container{
+    left:50%;
+    height: 5%;
+    max-width: 500px;
+    transform: translateX(-50%);
+    bottom: 2.5%;
+  }
+}
+/* sm */
+.digits_container{
+  display: flex;
+  height: 30px;
+  overflow: hidden;
+}
+.digits_container ul{
+  position: relative;
+  width:17px;
+  height: 1000%;
+}
+.digits_container ul li{
+  height: 10%;
+  color:white;
+  font-size: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+.text_container_wrap{
+  overflow: hidden;
+}
+.text_container_wrap ul{
+  width:100%;
+  position: relative;
+  height: 600%;
+}
+.text_container li{
+  display: flex;
+  float: left;
+  align-items: center;
+  height: 16.666%;
+  font-size: 0.8em;
+  color:#999;
+}
+@media screen and (min-width: 1100px) {
+  .text_container_wrap{margin-top: 10px;height: 60px;}
+}/* lg */
+@media screen and (max-width: 1100px) {
+  .text_container_wrap{position: absolute;top:0;left:50px;width:calc(100% - 50px);height: 100%;}
+}
+
+.about_news_visual .indicator {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  width: 60%;
+  max-width: 300px;
+  left: 50%;
+  top: 30px;
+  transform: translateX(-50%);
+}
+.about_news_visual .indicator button {
+  font-size: 25px;
+  color: white;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+.about_news_visual .indicator button:hover {
+  opacity: 1;
+}
+.about_news_visual .indicator .progress {
+  position: relative;
+  width: 70%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.about_news_visual .indicator .progress span {
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+}
+.about_news_visual .indicator .cnt {
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 0.8em;
+}
+.about_news_visual .indicator .cnt sub {
+  opacity: 0.5;
+}
+/* section-about-news-1----------------------------------------------------------------------------- */
+.section-about-news-1,.section-about-news-2{
+  padding: 100px 0;
+  background: #FFF;
+}
+.section-about-news-1>div,
+.section-about-news-2>div{
+  position: relative;
+}
+
+.section-about-news-1 svg,
+.section-about-news-2 svg{
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.section-about-news-1 .path,
+.section-about-news-2 .path{
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+}
+/* section-about-news-2----------------------------------------------------------------------------- */
